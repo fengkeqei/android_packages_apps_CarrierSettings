@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generated from Google CarrierSettings. See SOURCE.md for provenance. -->
-<carrier_config />
+<carrier_config>
+    <!-- Round 71: China Telecom IMS keys for the open-source ImsStack. -->
+    <boolean name="ims.request_ims_pdn_without_mmtel_bool" value="true" />
+    <int-array name="ims.supported_rats_int_array" num="1">
+        <item value="3" />
+    </int-array>
+</carrier_config>

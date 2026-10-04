@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generated from Google CarrierSettings. See SOURCE.md for provenance. -->
-<carrier_config />
+<!-- Round 71: China Unicom IMS bring-up. request_ims_pdn_without_mmtel=true
+     bypasses the A15 DataNetworkController VoPS check that rejects
+     MMTEL-capable IMS network requests when the Samsung RIL does not report
+     VoPS support. LTE-only supported RATs. -->
+<carrier_config>
+    <boolean name="ims.request_ims_pdn_without_mmtel_bool" value="true" />
+    <int-array name="ims.supported_rats_int_array" num="1">
+        <item value="3" />
+    </int-array>
+</carrier_config>
